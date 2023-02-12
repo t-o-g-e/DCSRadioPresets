@@ -1,0 +1,186 @@
+﻿<Window x:Class="DCS_Radio_Presets.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DCS_Radio_Presets"
+        mc:Ignorable="d"
+        Title="DCS Radio Presets" Height="800" Width="1200">
+    <Window.Resources>
+        <Style x:Key="ForegroundStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" 
+                    Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type DataGridRow}}, 
+      Path=Item.Color }" />
+  </Style>
+    </Window.Resources>
+    <DockPanel MouseLeftButtonUp="OnMouseLeftButtonUp" MouseMove="OnMouseMove" Name="DockPanel">
+        <Popup Name="Popup1" IsHitTestVisible="False" Placement="RelativePoint" AllowsTransparency="True">
+            <Border
+                BorderBrush="{DynamicResource CellBorderBrush}"
+                BorderThickness="2"
+                Background="Gray"
+                Opacity="0.75">
+                <TextBlock
+                    Style="{DynamicResource DefaultLabel}"
+                    FontWeight="Bold"
+                    VerticalAlignment="Center"
+                    Text="-----" />
+            </Border>
+        </Popup>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File" Name="FileMenu">
+                <MenuItem Header="_New plan" Click="NewPlanButton_OnClick"></MenuItem>
+                <MenuItem Header="_Open plan..." Click="OpenPlanButton_OnClick"></MenuItem>
+                <MenuItem Header="_Save plan as..." Click="SavePlanButton_OnClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Mission">
+                <MenuItem Header="_Open mission..." Click="OpenMission_OnClick"></MenuItem>
+                <MenuItem Header="_Save mission as..." Name="SaveMissionButton" Click="SaveMission_OnClick"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <TabControl Margin="0,3,0,0">
+            <TabItem Header="Settings">
+                <Grid Margin="0,3,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="32"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"></ColumnDefinition>
+                        <ColumnDefinition Width="200"></ColumnDefinition>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0">DCS folder</Label>
+                    <TextBox Name="DcsPath" Grid.Row="0" Grid.Column="1" Width="200" Margin="0,3,0,3" TextChanged="DcsPath_OnTextChanged"></TextBox>
+                    <Button Grid.Row="0" Grid.Column="2" Content="Browse..." Margin="5,3,0,3" Click="BrowseDcsPath_OnClick"></Button>
+                    <Label Grid.Row="0" Grid.Column="3" Name="DcsFolderPrompt">Set DCS folder to be able to add airfield frequencies to plan</Label>
+                    <Label Grid.Row="1" Grid.Column="0">Missions default folder</Label>
+                    <TextBox Name="MissionsPath" Grid.Row="1" Grid.Column="1" Width="200" Margin="0,3,0,3" TextChanged="MissionsDefaultPath_OnTextChanged"></TextBox>
+                    <Button Grid.Row="1" Grid.Column="2" Content="Browse..." Margin="5,3,0,3" Click="BrowseMissionsPath_OnClick"></Button>
+                    <Label Grid.Row="2" Grid.Column="0">Create kneeboard files</Label>
+                    <CheckBox Grid.Row="2" Grid.Column="1" Name="CreateKneeboardFiles" Margin="0,5,0,0" Checked="CreateKneeboardFiles_Changed" Unchecked="CreateKneeboardFiles_Changed"></CheckBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Plan" Name="PlanTab" IsSelected="True">
+                <Grid Margin="0,3,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"></ColumnDefinition>
+                        <ColumnDefinition Width="250"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Margin="0,0,0,5">
+                        <ComboBox Name="Theatre" Width="130" Margin="0, 0,0,0"></ComboBox>
+                        <Button Name="AddTheatreFrequenciesButton" Content="Add airfield frequencies" Margin="10,0,0,0" Padding="5,0,5,0"
+                                Click="AddTheatreFrequenciesButton_OnClick">
+                        </Button>
+                    </StackPanel>
+                    <local:BetterDataGrid Grid.Column="0" Grid.Row="1" x:Name="Comms" AutoGenerateColumns="False" Margin="0,0,5,0" PreviewMouseLeftButtonDown="Comms_OnPreviewMouseLeftButtonDown" BeginningEdit="OnBeginEdit" CellEditEnding="OnEndEdit" RowEditEnding ="Comms_OnRowEditEnding">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Label" Width="*" Binding="{Binding Label}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Frequency" Width="100" Binding="{Binding Frequency}"></DataGridTextColumn>
+                            <DataGridTemplateColumn Header="Modulation" Width="80">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <ComboBox
+                                            SelectedValue="{Binding Modulation, UpdateSourceTrigger=PropertyChanged}"
+                                            ItemsSource="{StaticResource modulations}"
+                                            SelectionChanged="Comms_ModulationSelectionChanged">
+                                        </ComboBox>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </local:BetterDataGrid>
+                    <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,0,0,5" Orientation="Horizontal">
+                        <ComboBox Name="AircraftTemplate" DisplayMemberPath="Type" Width="100" Margin="0,0,5,0" SelectionChanged="AircraftTemplate_OnSelectionChanged"></ComboBox>
+                        <Button Name="AddTemplate" Content="Add template" Padding="5,0,5,0" Margin="0,0,5,0"
+                                Click="AddTemplateButton_OnClick" IsEnabled="False">
+                        </Button>
+                        <Button Name="CopyTemplate" Content="Copy" Padding="5,0,5,0" Margin="0,0,5,0" Click="CopyTemplate_OnClick" IsEnabled="False"></Button>
+                        <Button Name="DeleteTemplate" Content="Delete" Padding="5,0,5,0" Click="DeleteTemplateButton_OnClick" IsEnabled="False"></Button>
+                    </StackPanel>
+                    <DataGrid Name="Templates" Grid.Row="1" Grid.Column="1" AutoGenerateColumns="False"
+                              Margin="0,0,5,0" CanUserAddRows="False" SelectionChanged="Templates_OnSelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Type" Width="90" Binding="{Binding Type}" IsReadOnly="True"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Name}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <DataGrid Grid.Row="1" Grid.Column="2" Name="Radios" AutoGenerateColumns="False" Margin="0,0,0,0"
+                              CanUserAddRows="False" >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Radio" Binding="{Binding RadioName}" IsReadOnly="True" Width="100"></DataGridTextColumn>
+                            <DataGridTextColumn Header="#" Binding="{Binding Number}" IsReadOnly="True" Width="25"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Channel" Binding="{Binding Channel}" IsReadOnly="True" Width="80"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Label" Binding="{Binding Label}" Width="100"
+                                                CanUserResize="True">
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Ranges" Binding="{Binding RangeText}" ElementStyle="{StaticResource ForegroundStyle}" IsReadOnly="True"
+                                                Width="*">
+                            </DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Mission" Name="MissionTab">
+                <Grid Margin="0,3,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                        <ColumnDefinition Width="200"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" Margin="0,0,0,5">
+                        <Button Content="Apply matching templates" Padding="5,0,5,0" Margin="0,0,20,0" Click="ApplyMatchingTemplates_OnClick"></Button>
+                        <ComboBox Name="Templates2" Width="150" Margin="0,0,5,0"></ComboBox>
+                        <Button Content="Apply to group" Padding="5,0,5,0" Margin="0,0,5,0" Click="ApplyToGroupButton_OnClick"></Button>
+                        <Button Content="Apply to unit" Padding="5,0,5,0" Click="ApplyToUnitButton_OnClick"></Button>
+                        <Button Content="Reset group" Padding="5,0,5,0" Margin="20, 0, 0, 0" Click="ResetGroupButton_OnClick"></Button>
+                        <Button Content="Reset unit" Padding="5,0,5,0" Margin="5, 0, 0, 0" Click="ResetUnitbutton_OnClick"></Button>
+                        <Button Content="Copy presets to group" Padding="5,0,5,0" Margin="20,0,0,0" Click="CopyPresetsToGroup_OnClick"></Button>
+                    </StackPanel>
+                    <DataGrid Grid.Row="1" Grid.Column="0" Name="Groups" AutoGenerateColumns="False" CanUserAddRows="False" SelectionChanged="Groups_OnSelectionChanged" Margin="0,0,3,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Group" Binding="{Binding Name}" Width="*"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <DataGrid Grid.Row="1" Grid.Column="1" Name="Units" AutoGenerateColumns="False" CanUserAddRows="False" SelectionChanged="Units_OnSelectionChanged" Margin="0,0,3,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Unit" Binding="{Binding Name}" Width="100"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Type" Binding="{Binding Type}" Width="*"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <local:BetterDataGrid Grid.Row="1" Grid.Column="2" x:Name="Presets" AutoGenerateColumns="False" CanUserAddRows="False" AllowDrop="True" PreviewMouseLeftButtonDown="Presets_OnPreviewMouseLeftButtonDown" BeginningEdit="OnBeginEdit" CellEditEnding="OnEndEdit" RowEditEnding="Presets_OnRowEditEnding" SelectionMode="Single">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Radio" Width="100" Binding="{Binding RadioName}" IsReadOnly="True"></DataGridTextColumn>
+                            <DataGridTextColumn Header="#" Width="30" Binding="{Binding Id}" IsReadOnly="True"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Freq." Width="50" Binding="{Binding Frequency}"></DataGridTextColumn>
+                            <DataGridTemplateColumn Header="Mod." Width="50">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <ComboBox
+                                            SelectedValue="{Binding Modulation, UpdateSourceTrigger=PropertyChanged}"
+                                            ItemsSource="{Binding ModulationOptions }">
+                                        </ComboBox>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="Label" Width="100" Binding="{Binding Label}"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </local:BetterDataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+</Window>
