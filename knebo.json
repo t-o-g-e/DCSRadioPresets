@@ -1,0 +1,19 @@
+﻿{
+  "FontSizes": {
+    "GroupName": 72,
+    "Radio": 48,
+    "Preset": 36
+  },
+  "Margins": {
+    "X": 60,
+    "X2": 800,
+    "Y": 60,
+    "BelowGroupName": 120,
+    "BelowRadioName": 80,
+    "BetweenPresets": 45,
+    "BelowLastPreset": 60,
+    "IndentPreset": 30,
+    "IndentFrequency": 350,
+    "IndentModulation": 500
+  }
+}

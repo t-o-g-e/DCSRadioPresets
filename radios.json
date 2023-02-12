@@ -1,0 +1,1352 @@
+﻿[
+  {
+    "Type": "A-10C",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "AN/ARC-186(V) VHF AM",
+        "Ranges": [
+          {
+            "Min": 116,
+            "Max": 151.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "AN/ARC-164 UHF",
+        "Ranges": [
+          {
+            "Min": 225,
+            "Max": 399.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      },
+      {
+        "Id": 3,
+        "Name": "AN/ARC-186(V) VHF FM",
+        "Ranges": [
+          {
+            "Min": 30,
+            "Max": 76,
+            "Modulation": "FM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "A-10C_2",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "AN/ARC-186(V) VHF AM",
+        "Ranges": [
+          {
+            "Min": 116,
+            "Max": 151.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "AN/ARC-164 UHF",
+        "Ranges": [
+          {
+            "Min": 225,
+            "Max": 399.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      },
+      {
+        "Id": 3,
+        "Name": "AN/ARC-186(V) VHF FM",
+        "Ranges": [
+          {
+            "Min": 30,
+            "Max": 76,
+            "Modulation": "FM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "AH-64D_BLK_II",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "ARC-186",
+        "Ranges": [
+          {
+            "Min": 108.0,
+            "Max": 151.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10"
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "ARC-164",
+        "Ranges": [
+          {
+            "Min": 225.0,
+            "Max": 399.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10"
+        ]
+      },
+      {
+        "Id": 3,
+        "Name": "FM 1: ARC-201D",
+        "Ranges": [
+          {
+            "Min": 30.0,
+            "Max": 87.975,
+            "Modulation": "FM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10"
+        ]
+      },
+      {
+        "Id": 4,
+        "Name": "FM 2: ARC-201D",
+        "Ranges": [
+          {
+            "Min": 30.0,
+            "Max": 87.975,
+            "Modulation": "FM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "C-101CC",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "V/TVU-740",
+        "Ranges": [
+          {
+            "Min": 118.0,
+            "Max": 399.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20",
+          "Channel 21"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "C-101EB",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "AN/ARC-164",
+        "Ranges": [
+          {
+            "Min": 225.0,
+            "Max": 399.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "Hawk",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "Radio 1",
+        "Ranges": [
+          {
+            "Min": 225.0,
+            "Max": 399.9,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "Ka-50",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "R-828",
+        "Ranges": [
+          {
+            "Min": 20,
+            "Max": 59.9,
+            "Modulation": "FM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10"
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "ARK-22",
+        "Ranges": [
+          {
+            "Min": 0.150,
+            "Max": 1.750,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1, Outer",
+          "Channel 1, Inner",
+          "Channel 2, Outer",
+          "Channel 2, Inner",
+          "Channel 3, Outer",
+          "Channel 3, Inner",
+          "Channel 4, Outer",
+          "Channel 4, Inner",
+          "Channel 5, Outer",
+          "Channel 5, Inner",
+          "Channel 6, Outer",
+          "Channel 6, Inner",
+          "Channel 7, Outer",
+          "Channel 7, Inner",
+          "Channel 8, Outer",
+          "Channel 8, Inner"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "MB-339A",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "AN/ARC-150(V)-2",
+        "Ranges": [
+          {
+            "Min": 225.0,
+            "Max": 399.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "SRT-651/N",
+        "Ranges": [
+          {
+            "Min": 30.0,
+            "Max": 87.975,
+            "Modulation": "FM"
+          },
+          {
+            "Min": 108,
+            "Max": 117.975,
+            "Modulation": "AM"
+          },
+          {
+            "Min": 118.0,
+            "Max": 136.9917,
+            "Modulation": "AM"
+          },
+          {
+            "Min": 137.0,
+            "Max": 155.975,
+            "Modulation": "AM"
+          },
+          {
+            "Min": 225,
+            "Max": 399.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 0",
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20",
+          "Channel 21",
+          "Channel 22",
+          "Channel 23",
+          "Channel 24",
+          "Channel 25",
+          "Channel 26",
+          "Channel 27",
+          "Channel 28",
+          "Channel 29"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "MB-339APAN",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "AN/ARC-150(V)-2",
+        "Ranges": [
+          {
+            "Min": 225.0,
+            "Max": 399.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "SRT-651/N",
+        "Ranges": [
+          {
+            "Min": 30.0,
+            "Max": 87.975,
+            "Modulation": "FM"
+          },
+          {
+            "Min": 108,
+            "Max": 117.975,
+            "Modulation": "AM"
+          },
+          {
+            "Min": 118.0,
+            "Max": 136.9917,
+            "Modulation": "AM"
+          },
+          {
+            "Min": 137.0,
+            "Max": 155.975,
+            "Modulation": "AM"
+          },
+          {
+            "Min": 225,
+            "Max": 399.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 0",
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20",
+          "Channel 21",
+          "Channel 22",
+          "Channel 23",
+          "Channel 24",
+          "Channel 25",
+          "Channel 26",
+          "Channel 27",
+          "Channel 28",
+          "Channel 29"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "Mi-24P",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "R-863",
+        "Ranges": [
+          {
+            "Min": 100,
+            "Max": 399.9,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 0",
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19"
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "R-828",
+        "Ranges": [
+          {
+            "Min": 20,
+            "Max": 59.9,
+            "Modulation": "FM"
+          }
+        ],
+        "Channels": [
+          "Channel 0",
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "AJS37",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "Radio",
+        "Ranges": [
+          {
+            "Min": 103,
+            "Max": 400,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Group 100",
+          "Group 101",
+          "Group 102",
+          "Group 103",
+          "Group 104",
+          "Group 105",
+          "Group 106",
+          "Group 107",
+          "Group 108",
+          "Group 109",
+          "Group 110",
+          "Group 111",
+          "Group 112",
+          "Group 113",
+          "Group 114",
+          "Group 115",
+          "Group 116",
+          "Group 117",
+          "Group 118",
+          "Group 119",
+          "Group 120",
+          "Group 121",
+          "Group 122",
+          "Group 123",
+          "Group 124",
+          "Group 125",
+          "Group 126",
+          "Group 127",
+          "Group 128",
+          "Group 129",
+          "Group 130",
+          "Group 131",
+          "Group 132",
+          "Group 133",
+          "Group 134",
+          "Group 135",
+          "Group 136",
+          "Group 137",
+          "Group 138",
+          "Group 139",
+          "Special 1",
+          "Special 2",
+          "Special 3",
+          "E",
+          "F",
+          "G",
+          "H (LARM/GUARD)"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "AV8BNA",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "V/UHF Radio 1",
+        "Ranges": [
+          {
+            "Min": 30,
+            "Max": 400,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20",
+          "Channel 21",
+          "Channel 22",
+          "Channel 23",
+          "Channel 24",
+          "Channel 25",
+          "Channel 26"
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "V/UHF Radio 2",
+        "Ranges": [
+          {
+            "Min": 30,
+            "Max": 400,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20",
+          "Channel 21",
+          "Channel 22",
+          "Channel 23",
+          "Channel 24",
+          "Channel 25",
+          "Channel 26"
+        ]
+      },
+      {
+        "Id": 3,
+        "Name": "V/UHF RCS Presets",
+        "Ranges": [
+          {
+            "Min": 30,
+            "Max": 400,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20",
+          "Channel 21",
+          "Channel 22",
+          "Channel 23",
+          "Channel 24",
+          "Channel 25",
+          "Channel 26",
+          "Channel 27",
+          "Channel 28",
+          "Channel 29",
+          "Channel 30"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "FA-18C_hornet",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "COMM 1: ARC-210",
+        "Ranges": [
+          {
+            "Min": 30,
+            "Max": 87.995,
+            "Modulation": "FM"
+          },
+          {
+            "Min": 118,
+            "Max": 135.995,
+            "Modulation": "AM"
+          },
+          {
+            "Min": 136,
+            "Max": 155.995,
+            "Modulation": "AMFM"
+          },
+          {
+            "Min": 156,
+            "Max": 173.995,
+            "Modulation": "FM"
+          },
+          {
+            "Min": 225,
+            "Max": 399.995,
+            "Modulation": "AMFM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "COMM 2: ARC-210",
+        "Ranges": [
+          {
+            "Min": 30,
+            "Max": 87.995,
+            "Modulation": "FM"
+          },
+          {
+            "Min": 118,
+            "Max": 135.995,
+            "Modulation": "AM"
+          },
+          {
+            "Min": 136,
+            "Max": 155.995,
+            "Modulation": "AMFM"
+          },
+          {
+            "Min": 156,
+            "Max": 173.995,
+            "Modulation": "FM"
+          },
+          {
+            "Min": 225,
+            "Max": 399.995,
+            "Modulation": "AMFM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "F-14B",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "UHF AN/ARC-159",
+        "Ranges": [
+          {
+            "Min": 225,
+            "Max": 399.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "VHF/UHF AN/ARC-182",
+        "Ranges": [
+          {
+            "Min": 30,
+            "Max": 87.975,
+            "Modulation": "AM"
+          },
+          {
+            "Min": 108,
+            "Max": 173.975,
+            "Modulation": "AM"
+          },
+          {
+            "Min": 225,
+            "Max": 399.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20",
+          "Channel 21",
+          "Channel 22",
+          "Channel 23",
+          "Channel 24",
+          "Channel 25",
+          "Channel 26",
+          "Channel 27",
+          "Channel 28",
+          "Channel 29",
+          "Channel 30"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "F-16C_50",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "COMM 1 (UHF) AN/ARC-164",
+        "Ranges": [
+          {
+            "Min": 225,
+            "Max": 399.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "COMM 2 (VHF) AN/ARC-222",
+        "Ranges": [
+          {
+            "Min": 30,
+            "Max": 87.975,
+            "Modulation": "FM"
+          },
+          {
+            "Min": 116,
+            "Max": 155.975,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "M-2000C",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "UHF Radio",
+        "Ranges": [
+          {
+            "Min": 225,
+            "Max": 400,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      },
+      {
+        "Id": 2,
+        "Name": "V/UHF Radio",
+        "Ranges": [
+          {
+            "Min": 118,
+            "Max": 140,
+            "Modulation": "AM"
+          },
+          {
+            "Min": 225,
+            "Max": 400,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6",
+          "Channel 7",
+          "Channel 8",
+          "Channel 9",
+          "Channel 10",
+          "Channel 11",
+          "Channel 12",
+          "Channel 13",
+          "Channel 14",
+          "Channel 15",
+          "Channel 16",
+          "Channel 17",
+          "Channel 18",
+          "Channel 19",
+          "Channel 20"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "MiG-19P",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "RSIU-4V Radio",
+        "Ranges": [
+          {
+            "Min": 100,
+            "Max": 150,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "Channel 1",
+          "Channel 2",
+          "Channel 3",
+          "Channel 4",
+          "Channel 5",
+          "Channel 6"
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "MiG-21Bis",
+    "Radios": [
+      {
+        "Id": 1,
+        "Name": "R-832",
+        "Ranges": [
+          {
+            "Min": 118,
+            "Max": 140,
+            "Modulation": "AM"
+          },
+          {
+            "Min": 220,
+            "Max": 390,
+            "Modulation": "AM"
+          }
+        ],
+        "Channels": [
+          "radiochannel00",
+          "radiochannel01",
+          "radiochannel02",
+          "radiochannel03",
+          "radiochannel04",
+          "radiochannel05",
+          "radiochannel06",
+          "radiochannel07",
+          "radiochannel08",
+          "radiochannel09",
+          "radiochannel10",
+          "radiochannel11",
+          "radiochannel12",
+          "radiochannel13",
+          "radiochannel14",
+          "radiochannel15",
+          "radiochannel16",
+          "radiochannel17",
+          "radiochannel18",
+          "radiochannel19"
+        ]
+      }
+    ]
+  }
+]
