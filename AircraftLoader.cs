@@ -131,6 +131,7 @@ public class RadioDefinition
 
     public Range[] Ranges { get; set; }
     public string[] Channels { get; set; }
+    public bool Primary { get; set; }
 }
 
 public class Range

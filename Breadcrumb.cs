@@ -17,6 +17,11 @@ public class Breadcrumb
     {
         return Path.Count > 10 && Radio != -1 && Path[^2] == "Radio" && int.TryParse(Path[^1], out _);
     }
+
+    public bool InGroup()
+    {
+        return Group != -1 && Unit == -1;
+    }
             
     public void Add(string block)
     {

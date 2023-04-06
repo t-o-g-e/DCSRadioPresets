@@ -161,6 +161,7 @@ public class ChannelModel
     public int Number { get; set; }
     public string Name { get; set; }
     public List<Range> Ranges { get; set; }
+    public bool Primary { get; set; }
 }
 
 public class AircraftModel
@@ -174,7 +175,8 @@ public class AircraftModel
             Ranges = radio.Ranges.ToList(),
             RadioName = radio.Name,
             Number = number,
-            Name = channel
+            Name = channel,
+            Primary = radio.Primary && number == 0
         })).ToList();
     }
     

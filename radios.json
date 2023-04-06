@@ -4,11 +4,11 @@
     "Radios": [
       {
         "Id": 1,
-        "Name": "AN/ARC-186(V) VHF AM",
+        "Name": "VHF AM: ARC-186",
         "Ranges": [
           {
-            "Min": 116,
-            "Max": 151.975,
+            "Min": 118,
+            "Max": 155.995,
             "Modulation": "AM"
           }
         ],
@@ -37,7 +37,7 @@
       },
       {
         "Id": 2,
-        "Name": "AN/ARC-164 UHF",
+        "Name": "UHF AM: ARC-164 ",
         "Ranges": [
           {
             "Min": 225,
@@ -66,15 +66,16 @@
           "Channel 18",
           "Channel 19",
           "Channel 20"
-        ]
+        ],
+		"Primary": true
       },
       {
         "Id": 3,
-        "Name": "AN/ARC-186(V) VHF FM",
+        "Name": "VHF FM: ARC-186",
         "Ranges": [
           {
             "Min": 30,
-            "Max": 76,
+            "Max": 87.995,
             "Modulation": "FM"
           }
         ],
@@ -108,11 +109,21 @@
     "Radios": [
       {
         "Id": 1,
-        "Name": "AN/ARC-186(V) VHF AM",
+        "Name": "UHF/VHF: ARC-210",
         "Ranges": [
           {
-            "Min": 116,
-            "Max": 151.975,
+            "Min": 30,
+            "Max": 87.975,
+            "Modulation": "FM"
+          },
+		  {
+            "Min": 108,
+            "Max": 173.975,
+            "Modulation": "AM"
+          },
+		  {
+            "Min": 225,
+            "Max": 399.975,
             "Modulation": "AM"
           }
         ],
@@ -136,12 +147,18 @@
           "Channel 17",
           "Channel 18",
           "Channel 19",
-          "Channel 20"
-        ]
+          "Channel 20",
+          "Channel 21",
+          "Channel 22",
+          "Channel 23",
+          "Channel 24",
+          "Channel 25"
+        ],
+		"Primary": true
       },
       {
         "Id": 2,
-        "Name": "AN/ARC-164 UHF",
+        "Name": "UHF AM: ARC-164 ",
         "Ranges": [
           {
             "Min": 225,
@@ -174,11 +191,11 @@
       },
       {
         "Id": 3,
-        "Name": "AN/ARC-186(V) VHF FM",
+        "Name": "VHF FM: ARC-186",
         "Ranges": [
           {
             "Min": 30,
-            "Max": 76,
+            "Max": 87.995,
             "Modulation": "FM"
           }
         ],
@@ -254,7 +271,8 @@
           "Channel 8",
           "Channel 9",
           "Channel 10"
-        ]
+        ],
+		"Primary": true
       },
       {
         "Id": 3,
@@ -339,7 +357,8 @@
           "Channel 19",
           "Channel 20",
           "Channel 21"
-        ]
+        ],
+		"Primary": true
       }
     ]
   },
@@ -377,7 +396,8 @@
           "Channel 18",
           "Channel 19",
           "Channel 20"
-        ]
+        ],
+		"Primary": true
       }
     ]
   },
@@ -413,7 +433,8 @@
           "Channel 16",
           "Channel 17",
           "Channel 18"
-        ]
+        ],
+		"Primary": true
       }
     ]
   },
@@ -441,7 +462,8 @@
           "Channel 8",
           "Channel 9",
           "Channel 10"
-        ]
+        ],
+		"Primary": true
       },
       {
         "Id": 2,
@@ -508,7 +530,8 @@
           "Channel 18",
           "Channel 19",
           "Channel 20"
-        ]
+        ],
+		"Primary": true
       },
       {
         "Id": 2,
@@ -609,7 +632,8 @@
           "Channel 18",
           "Channel 19",
           "Channel 20"
-        ]
+        ],
+		"Primary": true
       },
       {
         "Id": 2,
@@ -710,7 +734,8 @@
           "Channel 17",
           "Channel 18",
           "Channel 19"
-        ]
+        ],
+		"Primary": true
       },
       {
         "Id": 2,
@@ -798,7 +823,8 @@
           "F",
           "G",
           "H (LARM/GUARD)"
-        ]
+        ],
+		"Primary": true
       }
     ]
   },
@@ -842,7 +868,8 @@
           "Channel 24",
           "Channel 25",
           "Channel 26"
-        ]
+        ],
+		"Primary": true
       },
       {
         "Id": 2,
@@ -982,7 +1009,8 @@
           "Channel 18",
           "Channel 19",
           "Channel 20"
-        ]
+        ],
+		"Primary": true
       },
       {
         "Id": 2,
@@ -1073,7 +1101,8 @@
           "Channel 18",
           "Channel 19",
           "Channel 20"
-        ]
+        ],
+		"Primary": true
       },
       {
         "Id": 2,
@@ -1164,7 +1193,8 @@
           "Channel 18",
           "Channel 19",
           "Channel 20"
-        ]
+        ],
+		"Primary": true
       },
       {
         "Id": 2,
@@ -1240,7 +1270,8 @@
           "Channel 18",
           "Channel 19",
           "Channel 20"
-        ]
+        ],
+		"Primary": true
       },
       {
         "Id": 2,
@@ -1302,7 +1333,8 @@
           "Channel 4",
           "Channel 5",
           "Channel 6"
-        ]
+        ],
+		"Primary": true
       }
     ]
   },
@@ -1345,7 +1377,8 @@
           "radiochannel17",
           "radiochannel18",
           "radiochannel19"
-        ]
+        ],
+		"Primary": true
       }
     ]
   }

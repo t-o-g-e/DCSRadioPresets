@@ -36,7 +36,7 @@ public class Mission
             {
                 var block = blockMatch.Groups[1].Value;
                 breadcrumb.Add(block);
-
+                
                 if (breadcrumb.FoundRadio())
                 {
                     var cl = breadcrumb.Path.Contains("helicopter") ? "helicopter" : "plane";
@@ -80,6 +80,15 @@ public class Mission
 
                     row = missionFile[i];
                 }
+            }
+            
+            if (breadcrumb.InGroup() && row.Contains("frequency"))
+            {
+                var cl = breadcrumb.Path.Contains("helicopter") ? "helicopter" : "plane";
+                var primaryPreset = Groups.Where(x => x.Id == breadcrumb.Group).SelectMany(x => x.Units)
+                    .FirstOrDefault(x => x.Class == cl)?.Presets.FirstOrDefault(x => x.Primary);
+                if (primaryPreset != null)
+                    missionFile[i] = $"                                [\"frequency\"] = {primaryPreset.Frequency},";
             }
 
             if (row.Contains("},"))
@@ -223,7 +232,8 @@ public class Mission
                                     OriginalFrequency = freq,
                                     Modulation = mod,
                                     ModulationOptions = modOptions,
-                                    OriginalModulation = mod
+                                    OriginalModulation = mod,
+                                    Primary = radioDef?.Primary == true && (long)key == 1 
                                 });
                             }
                         }
@@ -332,6 +342,7 @@ public class Preset
     public string[] ModulationOptions { get; set; }
     public string OriginalModulation { get; set; }
     public string Label { get; set; }
+    public bool Primary { get; set; }
 
     public void Reset()
     {
