@@ -40,8 +40,6 @@ The **Settings** tab has the following settings:
 
 The **radios.json** file contains definitions for aircraft radios and presets. The list doesn't yet contain all aircraft available in DCS, but more will be added (and can be added by the user too as needed).
 
-A-10s don't yet work, maybe later...
-
 ## Kneeboard pictures
 
 When saving a mission, the frequencies for each aircraft type are saved to a kneeboard picture in the mission file. The **kbtemplate.png** file is used as a background image, and the **knebo.json** contains simple definitions for font sizes, margins, etc to place the frequency lists to the kneeboard picture.
